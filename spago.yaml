@@ -1,0 +1,8 @@
+package:
+  name: js-bigints
+  dependencies:
+    - maybe
+    - prelude
+workspace:
+  packageSet:
+    registry: 77.7.0
