@@ -71,7 +71,7 @@ $exports['biSub'] = function($a, $b) {
 };
 
 $exports['biMod'] = function($a, $b) {
-  return \gmp_mod($a, $b);
+  return \gmp_div_r($a, $b);
 };
 
 $exports['biDiv'] = function($a, $b) {
@@ -83,7 +83,9 @@ $exports['biDegree'] = function($a) {
 };
 
 $exports['pow'] = function($a, $b) {
-  return \gmp_pow($a, (int)\gmp_intval($b));
+  $exp = (int)\gmp_intval($b);
+  if ($exp < 0) return \gmp_init(0, 10);
+  return \gmp_pow($a, $exp);
 };
 
 $exports['or'] = function($a, $b) {

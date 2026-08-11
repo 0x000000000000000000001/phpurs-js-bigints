@@ -1,0 +1,62 @@
+Simple arithmetic operations and conversions from Int
+Parsing strings
+100/100 test(s) passed.
+100/100 test(s) passed.
+Parsing strings with a different base
+Conversions between String, Int and BigInt should not loose precision
+100/100 test(s) passed.
+Binary relations between integers should hold before and after converting to BigInt
+100/100 test(s) passed.
+100/100 test(s) passed.
+100/100 test(s) passed.
+100/100 test(s) passed.
+Can parse 256 bit numbers
+100/100 test(s) passed.
+It should perform multiplications which would lead to imprecise results using Number
+compare, (==), even, odd should be the same before and after converting to BigInt
+100/100 test(s) passed.
+100/100 test(s) passed.
+pow should perform integer exponentiation and yield 0 for negative exponents
+FATAL: gmp_cmp(): Argument #1 ($num1) must be of type GMP|string|int, class@anonymous given
+#0 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/JS.BigInt/index.php(225): gmp_cmp(Object(class@anonymous), Object(class@anonymous))
+#1 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/JS.BigInt/index.php(353): {closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/JS.BigInt/index.php:110}:224}(Object(class@anonymous), Object(class@anonymous))
+#2 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/JS.BigInt/index.php(50): JS\BigInt\majJmajS_majBigmajInt_bimajEquals(Object(class@anonymous), Object(class@anonymous))
+#3 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Test.Main/index.php(617): {closure:JS\BigInt\phpurs_curry_fallback():42}(Object(class@anonymous))
+#4 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(110): {closure:{closure:{closure:{closure:{closure:{closure:{closure:{closure:{closure:{closure:{closure:{closure:{closure:{closure:{closure:{closure:{closure:{closure:{closure:{closure:{closure:{closure:{closure:{closure:{closure:{closure:{closure:{closure:{closure:{closure:{closure:{closure:{closure:{closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Test.Main/index.php:456}:461}:463}:465}:467}:469}:471}:473}:475}:477}:479}:487}:501}:503}:505}:507}:509}:517}:519}:521}:523}:525}:527}:529}:531}:533}:548}:563}:577}:579}:581}:583}:597}:611}:613}:615}(NULL)
+#5 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#6 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#7 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#8 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#9 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#10 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#11 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#12 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#13 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#14 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#15 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#16 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#17 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#18 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#19 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#20 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#21 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#22 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#23 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#24 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#25 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#26 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#27 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#28 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#29 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#30 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#31 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#32 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#33 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#34 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#35 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#36 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#37 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#38 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#39 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php(111): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#40 /Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Test.Main/main.mod.php(110): {closure:{closure:{closure:/Users/0x1/Documents/htdocs/phpurs/phpurs-js-bigints/output/Effect/index.php:104}:107}:108}()
+#41 {main}
