@@ -11,7 +11,7 @@ import Data.Monoid.Conj (Conj(..))
 import Data.Newtype (un)
 import Effect (Effect)
 import Effect.Console (log)
-import JS.BigInt (BigInt, and, binary, decimal, even, fromInt, fromString, fromStringAs, fromTLInt, hexadecimal, not, octal, odd, or, pow, shl, shr, toInt, toString, toStringAs, xor)
+import JS.BigInt (BigInt, and, asIntN, asUintN, binary, decimal, even, fromInt, fromString, fromStringAs, fromTLInt, hexadecimal, not, octal, odd, or, pow, shl, shr, toInt, toString, toStringAs, xor)
 import Test.Assert (assert)
 import Test.QuickCheck (quickCheck)
 import Test.QuickCheck.Arbitrary (class Arbitrary)
@@ -164,3 +164,13 @@ main = do
   assert $ odd (fromInt 42) == false
   assert $ odd (fromInt 31)
   assert $ even (fromInt 31) == false
+
+  log "Signed and unsigned clamping"
+  assert $ toString (asIntN 8 (fromInt 127)) == "127"
+  assert $ toString (asIntN 8 (fromInt 128)) == "-128"
+  assert $ toString (asIntN 8 (fromInt 255)) == "-1"
+  assert $ toString (asIntN 8 (fromInt (-1))) == "-1"
+  assert $ toString (asIntN 64 (fromInt 42)) == "42"
+  assert $ toString (asUintN 8 (fromInt (-1))) == "255"
+  assert $ toString (asUintN 8 (fromInt 256)) == "0"
+  assert $ toString (asUintN 64 (fromInt 42)) == "42"

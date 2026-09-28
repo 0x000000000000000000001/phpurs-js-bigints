@@ -135,7 +135,12 @@ $exports['fromTypeLevelInt'] = function(string $s) {
 };
 
 $exports['asIntN'] = function(int $n, $b) {
-  return \gmp_and($b, \gmp_sub(\gmp_pow(2, $n), 1));
+  $m = \gmp_pow(2, $n);
+  $r = \gmp_mod($b, $m);
+  if (\gmp_cmp($r, \gmp_div_q($m, 2)) >= 0) {
+    $r = \gmp_sub($r, $m);
+  }
+  return $r;
 };
 
 $exports['asUintN'] = function(int $n, $b) {
