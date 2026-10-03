@@ -3,6 +3,8 @@
 /.pulp-cache/
 output/
 output.bak/
+/.purmeta/
+.DS_Store
 /generated-docs/
 /.psc-package/
 /.psc*
