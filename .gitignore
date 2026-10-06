@@ -12,3 +12,4 @@ output.bak/
 /.psa*
 /.spago
 /package-lock.json
+/test_out.txt
