@@ -1,5 +1,7 @@
 # purescript-js-bigints
 
+> PHPurs checkout: see the [PHP library development guide](https://github.com/0x000000000000000000001/phpurs/blob/main/docs/libraries.md) for the TAST toolchain, FFI conventions and validation commands. Run `./bin/test` from this package with the PHP toolchain prepared.
+
 ffi bindings for JavaScript's [`BigInt`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt).
 
 **Note:** There is also [`purescript-bigints`](https://github.com/purescript-contrib/purescript-bigints), which wraps the [BigInteger.js](https://github.com/peterolson/BigInteger.js) js library that emulated big integers before the arrival of `BigInt` and is now basically just a polyfill.
